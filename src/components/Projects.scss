@@ -15,8 +15,9 @@
     hr{
         color: #f5b700;
         border: 3px solid;
-        max-width: 60px;
+        max-width: 100px;
         margin-top: -20px;
+        margin-bottom: 2em;
     }
   
     .container {
@@ -67,24 +68,26 @@
           margin-bottom: 10px;
           color: #333;
           font-family: 'Playfair Display', serif;
+          padding: 20px;
         }
   
         p {
           font-size: 1rem;
           margin-bottom: 20px;
           color: #555;
+          text-align: left;
+          padding: 20px;
         }
   
         .btn {
-           padding: 10px 20px;
+            border: 2px solid #333;
+            color: #333;
+            background-color: transparent;
+            padding: 10px 20px;
           font-size: 1rem;
           text-decoration: none;
-          border-radius: 5px;
+          border-radius: 30px;
           transition: background-color 0.3s;
-  
-          &:hover {
-            background-color: #d4a100;
-          }
         }
       }
     
@@ -100,6 +103,7 @@
   
       &.right {
         flex-direction: row-reverse;
+
       }
     }
   }
