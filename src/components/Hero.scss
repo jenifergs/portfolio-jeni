@@ -10,24 +10,22 @@
     .hero-content {
       display: flex;
       align-items: center;
-      max-width: 1200px;
+      max-width: 80%;
       width: 100%;
       gap: 50px;
     }
   
     .hero-image {
       flex: 1;
-      position: relative;
-      border-radius: 5 10 50 50;
+      // position: relative;
   
       img {
         max-width: 100%;
         height: auto;
-        border-radius: 2000px 100px 2000px 1000px;
         display: block;
-
+        border-radius: 100%;
+        padding-top: 160px;
       }
-
     }
   
     .hero-text {
@@ -82,6 +80,36 @@
           &:hover {
             opacity: 0.8;
           }
+        }
+      }
+    }
+  
+    /* Media query para telas menores (mobile) */
+    @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        text-align: center;
+        gap: 20px; /* Reduz o espaçamento entre os elementos */
+      }
+  
+      .hero-image {
+        flex: none;
+        width: 80%; /* Garante que a imagem ocupe uma boa parte da largura */
+        order: 1;
+      }
+  
+      .hero-text {
+        h1 {
+          font-size: 2rem; /* Reduz o tamanho do título */
+        }
+  
+        .description {
+          font-size: 1rem; /* Reduz o tamanho da descrição */
+        }
+  
+        .hero-buttons {
+          flex-direction: column; /* Empilha os botões verticalmente */
+          gap: 10px;
         }
       }
     }
