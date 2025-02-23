@@ -1,7 +1,6 @@
 import React from 'react';
 import './Hero.scss';
 import jennyPhoto from '../assets/jenny-photo.png';
-import wave from '../assets/wave.svg';
 
 function Hero() {
   return (
@@ -21,7 +20,6 @@ function Hero() {
         </div>
         <div className="hero-image">
           <img src={jennyPhoto} alt="Jenifer Gonçalves" />
-          <img src={wave} alt="Wave background" className="wave" /> 
         </div>
       </div>
     </section>
