@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
+* {
+  box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total dos elementos */
+  margin: 0;
+  padding: 0;
+}
 
-body {
+
+  html, body {
+    width: 100%;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .container {
