@@ -7,21 +7,17 @@
     .hero-content {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
       width: 100%;
       gap: 50px;
       margin-top: 200px;
       padding-inline: 200px;
+      justify-content: space-around;
     }
   
     .hero-image {
-      flex: 1;
-      // position: relative;
   
       img {
-        max-width: 100%;
         width: 400px;
-        height: auto;
         display: block;
         border-radius: 100%;
       }
@@ -29,6 +25,7 @@
   
     .hero-text {
       flex: 1;
+      width: 800px;
   
       .subtitle {
         font-size: 1rem;
